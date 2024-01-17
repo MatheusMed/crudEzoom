@@ -1,10 +1,13 @@
 {
-  "name": "crudEzon",
+  "name": "crudEzoom",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "vercel-build": "npx prisma migrate deploy && tsc && prisma db push",
+    "start": "node src/server.js"
   },
   "dependencies": {
     "@prisma/client": "^5.7.0",
