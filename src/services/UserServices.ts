@@ -31,7 +31,13 @@ class UserServices {
         }
       });
 
-      res.status(201).json({ msg: "Usuario criado com sucesso", user: usuario });
+      res.status(201).json({
+        msg: "Usuario criado com sucesso", usuario: {
+          id: usuario.id,
+          name: usuario.name,
+          email: usuario.email,
+        }
+      });
     } catch (error) {
       return res.status(400).json({ msg: "erro ao criar usuario preencha os campos", error: error })
     }
@@ -61,11 +67,15 @@ class UserServices {
       expiresIn: '1d',
     });
 
-    var pass = Number.parseInt(usuario.password);
 
-    pass = 0;
 
-    res.status(200).json({ usuario, token });
+    res.status(200).json({
+      usuario: {
+        id: usuario.id,
+        name: usuario.name,
+        email: usuario.email,
+      }, token
+    });
 
   }
 }
