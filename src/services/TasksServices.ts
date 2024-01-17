@@ -62,7 +62,7 @@ class TasksServices {
 
       res.status(200).json({ getListaTasks });
     } catch (error) {
-      return res.status(500).json({ msg: "Erro ao buscar as tarefas", error: error });
+      return res.status(404).json({ msg: "Erro ao buscar as tarefas", error: error });
     }
   }
 

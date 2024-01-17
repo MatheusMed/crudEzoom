@@ -12,13 +12,13 @@ datasource db {
 }
 
 model Tasks {
-  id        Int      @id @default(autoincrement())
-  title     String
-  desc      String
-  createdAt DateTime @default(now())
-  updateAt  DateTime @default(now())
-  userId    Int
-  usuario   Usuario  @relation(fields: [userId], references: [id])
+  id      Int     @id @default(autoincrement())
+  title   String
+  desc    String
+  // createdAt DateTime @default(now())
+  // updateAt  DateTime @default(now())
+  userId  Int
+  usuario Usuario @relation(fields: [userId], references: [id])
 
   @@map("tasks")
 }
