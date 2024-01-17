@@ -25,7 +25,7 @@ model Tasks {
 
 model Usuario {
   id        Int      @id @default(autoincrement())
-  name      String   @unique
+  name      String
   email     String   @unique
   password  String
   createdAt DateTime @default(now())
