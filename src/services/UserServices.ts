@@ -61,7 +61,9 @@ class UserServices {
       expiresIn: '1d',
     });
 
-    usuario.password = "";
+    var pass = Number.parseInt(usuario.password);
+
+    pass = 0;
 
     res.status(200).json({ usuario, token });
 
