@@ -20,7 +20,7 @@
    
     Para mais detalhes, consulte o repositorio [CRUD-EZOOM](https://github.com/MatheusMed/app_crud_ezoom).
 
-     Faça o download do APK disponível em [APK-EZOOM](https://github.com/MatheusMed/app_crud_ezoom/releases/tag/appEzoom).
+     Faça o download do APK disponível em [APK-EZOOM](https://github.com/MatheusMed/app_crud_ezoom/releases).
 
 
 
